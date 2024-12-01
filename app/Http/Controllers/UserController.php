@@ -72,7 +72,6 @@ class UserController extends Controller
                 'password' => 'required|min:8',
             ]
         );
-        dd($request->session());
         $user->update($attrs);
         return redirect('/users')->with('success', 'User updated successfully');
     }

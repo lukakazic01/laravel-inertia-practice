@@ -45,7 +45,7 @@
                 :disabled="editForm.processing"
                 @click.prevent="editUser"
                 class="rounded bg-blue-500 text-white p-2 w-full"
-                :class="[editForm.processing && 'bg-blue-400']"
+                :class="[editForm.processing && '!bg-blue-400']"
             >
                 Edit
             </button>
